@@ -1,0 +1,9 @@
+https://9c3deb1b-bfc2-4486-a165-4e9254ce6771.mock.pstmn.io
+
+openssl s_client \
+  -connect 9c3deb1b-bfc2-4486-a165-4e9254ce6771.mock.pstmn.io:443 \
+  -showcerts
+
+  openssl s_client \
+    -connect localhost:13022 \
+    -showcerts

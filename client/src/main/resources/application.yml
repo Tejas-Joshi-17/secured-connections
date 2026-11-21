@@ -1,0 +1,19 @@
+#server:
+#  ssl:
+#    enabled: true
+##    client-auth: need
+#    trust-store: classpath:client-truststore.p12
+#    trust-store-type: PKCS12
+#    trust-store-password: password
+
+spring:
+  ssl:
+    bundle:
+      jks:
+        third-party-api:
+          truststore:
+            location: classpath:client-truststore.p12
+            password: password
+            type: PKCS12
+#
+#

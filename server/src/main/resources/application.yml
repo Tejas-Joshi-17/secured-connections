@@ -1,0 +1,10 @@
+server:
+  ssl:
+    enabled: true
+    key-store-type: PKCS12
+    key-store: classpath:server-keystore.p12
+    key-store-password: password
+    key-alias: myapp
+    enabled-protocols:
+      - TLSv1.3
+      - TLSv1.2
